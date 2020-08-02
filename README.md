@@ -1,2 +1,2 @@
 # nextjs
-## personal project with Next.js
+## Personal Project with Next.js
