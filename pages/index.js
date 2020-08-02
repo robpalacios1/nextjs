@@ -12,7 +12,7 @@ function Index(props) {
                 <title>Next.js Project</title>
             </Head>
             <Container>
-                <h1>Next</h1>
+                <h1 className="api__data">API DATA</h1>
                 <Users users={props.users}/>
             </Container>
         </div>
@@ -20,9 +20,9 @@ function Index(props) {
 }
 
 Index.getInitialProps = async (ctx) => {
-    const res = await fetch('https://jsonplaceholder.typicode.com/users');
-    const data = await res.json();
-    return {users: data}
+    const res = await fetch('https://reqres.in/api/users');
+    const resJSON = await res.json();
+    return {users: resJSON.data}
 }
 
 export default Index
