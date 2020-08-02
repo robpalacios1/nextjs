@@ -10,8 +10,8 @@ function Container(props) {
                 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.0/flatly/bootstrap.min.css"/>
             </Head>
             <Navigation />
-            <div>
-                { props.children }
+            <div className="container p-4">
+                {props.children}
             </div>
         </div>
     )
