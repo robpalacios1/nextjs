@@ -1,9 +1,13 @@
 import React from 'react'
 import Container from '../components/container'
+import Head from 'next/head'
 
 function Services() {
     return (
         <div>
+            <Head>
+                <title>Next.js Project</title>
+            </Head>
             <Container>
                 <h1>Services</h1>
             </Container>

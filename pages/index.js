@@ -1,11 +1,17 @@
 import React from 'react'
 import Container from '../components/container'
+import Head from 'next/head'
 
 function Index() {
     return (
-        <Container>
-            <h1>Index</h1>
-        </Container>
+        <div>
+            <Head>
+                <title>Next.js Project</title>
+            </Head>
+            <Container>
+                <h1>Index</h1>
+            </Container>
+        </div>
     )
 }
 
